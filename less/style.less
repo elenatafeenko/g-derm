@@ -3,3 +3,103 @@
   src: url("../fonts/MyriadProRegular.ttf");
 }
 
+.full-width {
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+}
+
+header  {
+  .logo {
+    margin: 25px 0;
+  }
+  .header-contacts {
+    padding-top: 15px;
+
+    .cosm-title {
+      margin: 0 0 0 10px;
+      font-weight: 400;
+    }
+    .header-phone {
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.btn-action {
+  border-bottom: 2px dotted @text-color;
+  color: @text-color;
+  padding: 0;
+  background: none;
+  &:focus, &:active, &:hover {
+    text-decoration: none;
+    color: @text-color;
+    outline: none;
+  }
+}
+
+.navigation {
+  border-top: 1px solid @navbar-default-border;
+
+  .navbar-default {
+    min-height: 1px;
+    margin-left: -15px;
+
+    li {
+      padding-bottom: 15px;
+      padding-top: 15px;
+
+      a {
+        padding: 0 8px;
+        text-transform: uppercase;
+        border-right: 1px solid @navbar-default-border;
+        line-height: 25px;
+        color: @text-color;
+      }
+      &:last-child a {
+        border: none;
+      }
+    }
+    .active {
+      background-color: @navbar-default-link-active-bg;
+      border: 3px solid @navbar-default-link-active-bg;
+      position: relative;
+      top: -3px;
+      left: -3px;
+      z-index: 10;
+
+      &>a {
+        color: white;
+        border: none;
+      }
+    }
+  }
+  .search {
+    position: relative;
+
+    .glyphicon-search {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 16px;
+    }
+    form {
+      //display: none;
+      input {
+        width: 140px;
+        padding-right: 25px;
+        outline: none;
+
+        &:focus {
+          border-color: @pre-border-color;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+        }
+      }
+    }
+  }
+}
+
