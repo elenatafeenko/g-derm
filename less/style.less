@@ -53,6 +53,10 @@ header  {
       padding-bottom: 15px;
       padding-top: 15px;
 
+      &:hover a {
+        color: @text-color-hover;
+      }
+
       a {
         padding: 0 8px;
         text-transform: uppercase;
@@ -75,6 +79,48 @@ header  {
       &>a {
         color: white;
         border: none;
+      }
+      &:hover>a, &:visited, &:focus {
+        color: white;
+      }
+    }
+    .drop {
+      position: relative;
+
+      .drop-menu {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 58px;
+        left: -3px;
+        background-color: white;
+        border: 1px solid @navbar-default-border;
+        border-top: 2px solid @navbar-default-link-active-bg;
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding: 0 3px;
+
+          &:hover a {
+            color: @text-color-hover;
+          }
+
+          &:nth-child(odd) {
+            background-color: #f7f7f7;
+          }
+            a {
+              color: @text-color;
+              text-transform: none;
+              line-height: 40px;
+              border: none;
+              text-decoration: none;
+            }
+        }
+      }
+
+      &:hover .drop-menu, .drop-menu:hover {
+        display: block;
       }
     }
   }
