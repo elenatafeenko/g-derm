@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-5 logo">
+                <div class="col-md-5 col-sm-8 col-xs-12 logo">
                     <a href="#">
                         <img src="image/logo.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-md-3 col-md-offset-4 header-contacts">
+                <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-4 col-xs-offset-0 header-contacts">
                     <h5 class="pull-right cosm-title">
                         Кабинет косметолога
                     </h5>
@@ -35,7 +36,16 @@
         <div class="navigation">
             <div class="container">
                 <nav class="navbar-default">
-                    <ul class="nav navbar-nav">
+                    <div class="burger-btn">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navigation-mini" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav" id="navigation-mini">
                         <li><a href="#">О марке</a></li>
                         <li><a href="#">Академия</a></li>
                         <li class="active drop">
@@ -57,11 +67,100 @@
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
                 </form>
-                <i class="glyphicon glyphicon-search pull-right" aria-expanded="false" data-toggle="collapse" data-target="#search-input"></i>
+                <i class="glyphicon glyphicon-search pull-right" aria-expanded="false"
+                   data-toggle="collapse" data-target="#search-input"></i>
             </div>
         </div>
     </div>
 </header>
+    <div class="main">
+        <!--CAROUSEL-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="image/slide1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Философия G-DERM</h1>
+                        <p>
+                            Замедляя внутренние источники старения, мы помогаем
+                            женщинам выглядеть, чувствовать и жить молодо.
+                        </p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/slide1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Философия G-DERM</h1>
+                        <p>
+                            Замедляя внутренние источники старения, мы помогаем
+                            женщинам выглядеть, чувствовать и жить молодо.
+                        </p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/slide1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Философия G-DERM</h1>
+                        <p>
+                            Замедляя внутренние источники старения, мы помогаем
+                            женщинам выглядеть, чувствовать и жить молодо.
+                        </p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SERIES-->
+        <div class="series">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="column">
+                            <h2>Профессиональная серия</h2>
+                            <p>
+                                Только для использования профессиональными
+                                косметологами после получения сертификата
+                                в нашем учебном-центре.
+                            </p>
+                            <a href="#">Перейти в каталог
+                                <i class="glyphicon glyphicon-triangle-right"></i>
+                            </a>
+                            <img src="image/prof-seria.png" class="pull-right" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="column">
+                            <h2>Домашняя серия</h2>
+                            <p>
+                                Те же препараты, но в меньшей концентрации.
+                                Для использования дома в перерывах между
+                                салонными процедурами.
+                            </p>
+                            <a href="#">Перейти в каталог
+                                <i class="glyphicon glyphicon-triangle-right"></i>
+                            </a>
+                            <img src="image/dom-seria.png" class="pull-right" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
 </body>
 </html>
+
+
